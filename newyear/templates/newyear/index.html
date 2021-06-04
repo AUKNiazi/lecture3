@@ -1,0 +1,18 @@
+<!-- this next line is added for adding ststic files from the folder static like css file -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it New Year's?</title>
+        <!-- to load css file -->
+        <link href="{% static 'newyear/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% if newyear %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>No</h1>
+        {% endif %}
+    </body>
+</html>
